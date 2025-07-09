@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold">
+            <Link href="/landing" className="text-xl font-bold">
               <span className="text-white">JOE</span>
               <span className="text-white">ART</span>
             </Link>

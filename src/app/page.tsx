@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -93,10 +94,10 @@ export default function WeddingPlanner() {
       <div className="w-full lg:w-1/2 flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b">
-          <div className="flex items-center space-x-2">
+          <Link href="/landing" className="flex items-center space-x-2">
             <Heart className="h-6 w-6 text-pink-500" />
-            <span className="text-xl font-bold text-gray-900">JoeArt</span>
-          </div>
+            <span className="text-xl font-bold text-gray-900 hover:text-pink-500 transition-colors">JoeArt</span>
+          </Link>
           <div className="flex space-x-6 text-sm text-gray-600">
             <span className="hover:text-pink-500 cursor-pointer">👥 List Tamu</span>
             <span className="hover:text-pink-500 cursor-pointer">✨ Fitur Keren</span>
