@@ -53,13 +53,14 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-katsudoto-teal mb-8 max-w-md">
               Sesuaikan desain undangan seperti keinginan kamu dari mana saja, kapan saja.
             </p>
-            <Button
-              size="lg"
-              onClick={() => window.location.href = '/'}
-              className="bg-katsudoto-pink hover:bg-katsudoto-pink/90 text-white px-8 py-6 text-lg font-medium rounded-full cursor-pointer"
-            >
-              Buat Undangan
-            </Button>
+            <Link href="/">
+              <Button
+                size="lg"
+                className="bg-katsudoto-pink hover:bg-katsudoto-pink/90 text-white px-8 py-6 text-lg font-medium rounded-full"
+              >
+                Buat Undangan
+              </Button>
+            </Link>
           </div>
 
           {/* Center Phone Mockup */}

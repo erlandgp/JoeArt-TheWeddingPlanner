@@ -66,13 +66,14 @@ const StatisticsSection = () => {
         </div>
 
         <div className="text-center">
-          <Button
-            size="lg"
-            onClick={() => window.location.href = '/'}
-            className="bg-katsudoto-pink hover:bg-katsudoto-pink/90 text-white px-12 py-6 text-xl font-medium rounded-full cursor-pointer"
-          >
-            Buat Undangan
-          </Button>
+          <Link href="/">
+            <Button
+              size="lg"
+              className="bg-katsudoto-pink hover:bg-katsudoto-pink/90 text-white px-12 py-6 text-xl font-medium rounded-full"
+            >
+              Buat Undangan
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
